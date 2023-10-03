@@ -1,0 +1,466 @@
+/* Configurações gerais */
+html{
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #c1b6b6d2;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.Butão-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+button:hover,
+form .butao-enviar input:hover {
+    background-color: chartreuse;
+    box-shadow: 0px 0px 8px;
+    transform: scale(1.2);
+}
+
+H2.titulo {
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header {
+    padding: 15px 4%;
+    background-color: #333;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header  a:hover {
+    color: chartreuse;
+    transform: scale(1.2);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+/* Cabeçalho mobilo */
+.botão-abrir{
+    display: block;
+    color: white;
+    font-size: 35px;
+    
+}
+
+@media screen and (min-width: 1021px) {
+    .botão-abrir {
+        display: none; 
+    }
+}
+
+
+.menu-mobile{
+    background-color: #333;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.abrir-menu{
+    width: 60%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .botão-fechar{
+    padding: 20px 20px 4%;
+}
+
+.menu-mobile .botão-fechar i{
+    color: #fff;
+    font-size: 35px;
+}
+.menu-mobile nav ul{
+    text-align: right;
+} 
+.menu-mobile nav ul li a{
+    font-size: 20px;
+    padding: 20px 20px 8%;
+    display: block;
+
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #fff;
+}
+.overlay-menu {
+    background-color: #000000ac;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;    
+    display: none;
+}
+
+/* Conteúdo-site */
+
+section .Conteúdo-site {
+    padding: 40px 4%;
+}
+
+section.Conteúdo-site .flex {
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.Conteúdo-site H1 {
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.Conteúdo-site .texto p {
+    text-align: justify;
+    margin: 30px 0;
+}
+
+/* Minhas especialidades */
+
+section.especialidades {
+    padding: 140px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+    
+}
+
+.especialidades .especialidades-box {
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .3s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #00000045;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+
+}
+
+.especialidades .especialidades-box p {
+    text-align: justify;
+}
+
+/* Sobre eu */
+section.Sobre {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #00000016;
+}
+
+section.Sobre .flex {
+    align-items: center;
+    gap: 100px;
+
+}
+
+.Sobre .texto-sobre H2 {
+    font-size: 52px;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.Sobre .texto-sobre H2 span {
+    color: black;
+    display: block;
+}
+
+.Sobre .texto-sobre p {
+    text-align: justify;
+}
+
+.Butão-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px 10px;
+    transition: .3s;
+}
+
+.Sobre .texto-sobre .Butão-social button:hover {
+    background-color: chartreuse;
+}
+
+/* Meus projetos */
+section.Projetos {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #00000016;
+}
+
+section.Projetos .flex {
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.img-port {
+    width: 250px;
+    height: 400px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .9s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    color: chartreuse;
+    opacity: 1;
+}
+
+/* Fala Comigo */
+
+section.Fale-comigo {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #ffffff82;
+    border: 0;
+    outline: 0;
+    padding: 15px 15px 15px;
+    border-radius: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+form input,
+form textarea::placeholder {
+    color: #333;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .butao-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .butao-enviar input {
+    width: 120px;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form .butao-enviar input:hover {
+    background-color: chartreuse;
+
+}
+
+/* Rodapé */
+
+footer {
+    padding: 20px 4%;
+    background-color: #333;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .flex .logo-footer {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer .line-footer H2 {
+    color: white;
+    padding: 0px 4%;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* responsive */
+@media screen and (max-width:1020px) {
+
+    
+
+    /* Classes gerais */
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .Conteúdo-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop,
+    .Butão-contato {
+        display: none;
+    }
+
+    /* Conteudo do site */
+    .Conteúdo-site {
+        padding: 20px 8%;
+    }
+
+    section.Conteúdo-site .flex {
+        gap: 40px;
+    }
+
+    .Conteúdo-site H1 {
+        font-size: 30px;
+    }
+
+    /* Minhas especialidades */
+
+    section.especialidades {
+        padding: 80px 8%;
+
+    }
+
+    /* Sobre eu */
+    section.Sobre {
+        padding: 80px 8%;
+        box-shadow: 0px 0px 40px 10px #00000016;
+    }
+    .Sobre .texto-sobre H2 {
+        font-size: 42px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .Butão-social{
+        text-align: center;
+    }
+
+    /* Projetos */
+    section.Projetos {
+        padding: 80px 8%;
+        
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.Projetos .flex {
+       gap: 60px;
+    }
+
+    /* rodapé */
+    footer .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
