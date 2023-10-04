@@ -187,9 +187,19 @@
                             document.cadastro.nome.focus();
                             return false;
                         }
-                        if (document.cadastro.Observações.value == "") {
+                        if (document.cadastro.Observacoes.value == "") {
                             window.alert("Deve fornecer uma mensagem de texto. pois o campo é obriatorio.");
-                            document.cadastro.Observações.focus();
+                            document.cadastro.Observacoes.focus();
+                            return false;
+                        }
+                        if(document.cadastro.telefone.value == ""){
+                            window.alert("Deve fornecer um numero de contato valido, com até 11 numeros.");
+                            document.cadastro.telefone.focus();
+                            return false;
+                        }
+                        if(document.cadastro.email.value == ""){
+                            window.alert("Deve fornecer um email valido.");
+                            document.cadastro.email.focus();
                             return false;
                         }
                     }
@@ -198,9 +208,9 @@
                 <form action="mailto:malachias322@gmail.com" method="post" enctype="text/plain" name="cadastro">
 
                     <input type="text" name="nome" id="" placeholder="Seu nome completo" required>
-                    <input type="text" name="" id="" placeholder="Seu emai" required>
-                    <input type="text" name="" id="" placeholder="Seu telefone">
-                    <textarea name="Observações" id="" placeholder="Sua mensagem" required></textarea>
+                    <input type="text" name="email" id="" placeholder="Seu emai" required>
+                    <input type="text" name="telefone" id="" placeholder="Seu telefone">
+                    <textarea name="Observacoes" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="butao-enviar">
                         <div>
                             <input type="submit" value="Enviar" onclick="validar();">
