@@ -14,11 +14,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Fim Bootstrap -->
-    <link rel="shortcut icon" href="./Assets/img/logo.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="./Assets/img/logo.png" type="image/x-icon">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./assets/css/home.css">
     <script src="./assets/js/menu.js" defer></script>
-</head> 
+</head>
 
 <body>
     <header>
@@ -150,9 +150,12 @@
                             animado para compartilhá-lo e explorar mais sobre meu desenvolvimento.
                         </P>
                         <div class="Butão-social">
-                            <a href="https://www.instagram.com/juanmalachias/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/juanmalachias/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/Juanmalachias" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.instagram.com/juanmalachias/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/juanmalachias/" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/Juanmalachias" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
                         </div>
 
 
@@ -178,13 +181,13 @@
             <div class="interface">
                 <H2 class="titulo">Fala Comigo</H2>
                 <script>
-                    function validar(){
-                        if(document.cadastro.nome.value==""){
+                    function validar() {
+                        if (document.cadastro.nome.value == "") {
                             window.alert("Deve fornece um nome, pois ele é um campo obrigatorio.");
                             document.cadastro.nome.focus();
                             return false;
                         }
-                        if(document.cadastro.Observações.value==""){
+                        if (document.cadastro.Observações.value == "") {
                             window.alert("Deve fornecer uma mensagem de texto. pois o campo é obriatorio.");
                             document.cadastro.Observações.focus();
                             return false;
@@ -192,14 +195,19 @@
                     }
                 </script>
 
-                <form action="malito:malachias322@gmail.com" method="post" enctype="text/plain" name="cadastro">
+                <form action="mailto:malachias322@gmail.com" method="post" enctype="text/plain" name="cadastro">
 
                     <input type="text" name="nome" id="" placeholder="Seu nome completo" required>
                     <input type="text" name="" id="" placeholder="Seu emai" required>
                     <input type="text" name="" id="" placeholder="Seu telefone">
                     <textarea name="Observações" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="butao-enviar">
-                        <input type="submit" value="Enviar" onclick="validar();">
+                        <div>
+                            <input type="submit" value="Enviar" onclick="validar();">
+                        </div>
+                        <div>
+                            <input type="reset" value="Limpar">
+                        </div>
                     </div>
                 </form>
             </div><!-- fim da div interface -->
@@ -221,9 +229,12 @@
                     </div>
                     <div>
                         <div class="Butão-social">
-                            <a href="https://www.instagram.com/juanmalachias/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/juanmalachias/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/Juanmalachias" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.instagram.com/juanmalachias/" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/juanmalachias/" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/Juanmalachias" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
                         </div>
                     </div>
                 </div>
