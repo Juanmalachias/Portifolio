@@ -126,7 +126,7 @@
                             quanto físicos.
                         </p>
                     </div><!-- Fim da div especialidades-box -->
-                    
+
                 </div><!-- Fim da div flex -->
             </div><!-- Fim da div interface -->
         </section><!-- fim da section especialidades -->
@@ -175,12 +175,16 @@
                         </div> Fim da div overlay -->
                     <!--</div> Fim da div img-port -->
                     <div class="img-port" style="background-image: url(./assets/img/Projeto2.png);">
-                        <div class="overlay">Blog Pessoal
-                        </div><!-- Fim da div overlay -->
+                        <a href="https://blog-pessoal-front-end-steel.vercel.app" target="_blank">
+                            <div class="overlay">Blog Pessoal
+                            </div><!-- Fim da div overlay -->
+                        </a>
                     </div><!-- Fim da div img-port -->
                     <div class="img-port" style="background-image: url(./assets/img/Projeto3.png);">
-                        <div class="overlay">MaternaCare
-                        </div><!-- Fim da div overlay -->
+                        <a href="https://materna-care-front-end.vercel.app" target="_blank">
+                            <div class="overlay">MaternaCare
+                            </div><!-- Fim da div overlay -->
+                        </a>
                     </div><!-- Fim da div img-port -->
                 </div><!-- fim da div flex -->
             </div><!-- fim da div interface -->
@@ -201,12 +205,12 @@
                             document.cadastro.Observacoes.focus();
                             return false;
                         }
-                        if(document.cadastro.telefone.value == ""){
+                        if (document.cadastro.telefone.value == "") {
                             window.alert("Deve fornecer um numero de contato valido, com até 11 numeros.");
                             document.cadastro.telefone.focus();
                             return false;
                         }
-                        if(document.cadastro.email.value == ""){
+                        if (document.cadastro.email.value == "") {
                             window.alert("Deve fornecer um email valido.");
                             document.cadastro.email.focus();
                             return false;
